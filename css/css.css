@@ -1,22 +1,28 @@
 
   body{
-      max-width: 900px;
+      max-width: 950px;
       min-width: 320px;
+      
+      display:grid;
+      grid-template-columns: auto auto;
+  }
+
+  header{
+    grid-area: profile;
+  }
+
+  main{
+      grid-area: articles;
   }
   
   .socialMediaLinks{
     text-align: right;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-rows: 25% 25% 25%;
-    grid-gap: 10px;
-  }
-
   h1{
-      color: green;
+      color: rgb(40, 102, 94);
       font-family:  sans-serif;
+      font-size: 40
   }
 
   h1 sub{
@@ -36,7 +42,7 @@
     width: 320px
   }
 
-  .box {
+  .articleBox {
     background-color: #444;
     color: white;
     padding: 20px;
@@ -47,3 +53,4 @@
 h2{
   margin: 50px 0px 0px 10px;
 }
+
