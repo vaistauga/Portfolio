@@ -1,0 +1,49 @@
+
+  body{
+      max-width: 900px;
+      min-width: 320px;
+  }
+  
+  .socialMediaLinks{
+    text-align: right;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 25% 25% 25%;
+    grid-gap: 10px;
+  }
+
+  h1{
+      color: green;
+      font-family:  sans-serif;
+  }
+
+  h1 sub{
+      display: inline-block;
+      color: gray;
+  }
+
+  #profilePic{
+      position: relative;
+      Left: 200px;
+      bottom: 50px;
+      margin-bottom: -50px;
+  }
+
+  header p{
+      font-size: 24px;
+    width: 320px
+  }
+
+  .box {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    /*! font-size: 150%; */
+    border: 2px solid black;
+  }
+
+h2{
+  margin: 50px 0px 0px 10px;
+}
