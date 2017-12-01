@@ -1,56 +1,82 @@
 
-  body{
-      max-width: 950px;
-      min-width: 320px;
-      
-      display:grid;
-      grid-template-columns: auto auto;
-  }
-
-  header{
-    grid-area: profile;
-  }
-
-  main{
-      grid-area: articles;
-  }
+*{
+  box-sizing: border-box;
   
-  .socialMediaLinks{
-    text-align: right;
+
+  
+  
+      font-family: 'Open Sans', sans-serif;
+
 }
 
-  h1{
-      color: rgb(40, 102, 94);
-      font-family:  sans-serif;
-      font-size: 40
+body{
+      max-width: 950px;
+      min-width: 320px;
+      margin: 0 auto;
+      padding: 20px;
+
+      display:grid;
+      grid-template-areas:
+      "socialMedia"
+      "profile"
+      "articles"
+    }
+
+.profile{
+    grid-area: profile;
+}
+
+  .socialMediaLinks{
+    text-align: right;
+    grid-area: socialMedia;
+}
+
+main{
+  grid-area: articles;
+  column-count: 2;
+  
+}
+
+.articleBox {
+  border-left: 5px solid green;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  page-break-inside: avoid; /* Firefox */
+  break-inside: avoid; /* IE 10+ */
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(40, 102, 94);
+  font-family:  sans-serif;
+  font-size: 40
   }
 
-  h1 sub{
-      display: inline-block;
-      color: gray;
+h1 sub{
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  }
+ 
+#profilePic{
+  position: relative;
+  Left: 200px;
+  bottom: 50px;
+  margin-bottom: -50px;
   }
 
-  #profilePic{
-      position: relative;
-      Left: 200px;
-      bottom: 50px;
-      margin-bottom: -50px;
+header p{
+  font-size: 24px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 320px;
   }
-
-  header p{
-      font-size: 24px;
-    width: 320px
-  }
-
-  .articleBox {
-    background-color: #444;
-    color: white;
-    padding: 20px;
-    /*! font-size: 150%; */
-    border: 2px solid black;
+  p
+  {
   }
 
 h2{
-  margin: 50px 0px 0px 10px;
+  padding: 10px 0px 5px 0px;
+  margin: 0px;
+  break-inside: avoid;
+  background: green;
 }
 
