@@ -1,82 +1,124 @@
 
 *{
   box-sizing: border-box;
-  
+  margin: 0px;  
+}
 
-  
-  
-      font-family: 'Open Sans', sans-serif;
+span.avoidwrap { display:inline-block; }
 
+p{
+  font-family:  'Saira', sans-serif;
+}
+
+a{
+  line-height: 0%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 500; 
 }
 
 body{
-      max-width: 950px;
-      min-width: 320px;
-      margin: 0 auto;
-      padding: 20px;
-
-      display:grid;
-      grid-template-areas:
-      "socialMedia"
-      "profile"
-      "articles"
-    }
-
-.profile{
-    grid-area: profile;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 16px 8px 16px 8px;
+  display:grid;
+  grid-template-areas:
+  "profile"
+  "socialMedia"
+  "articles"
 }
 
-  .socialMediaLinks{
-    text-align: right;
-    grid-area: socialMedia;
+.article_image{
+  width: 100%;
+  height: auto;
+  border: 0.5px solid black;
+}
+
+.socialMediaLinks{
+  margin: 8px 0px 8px 0px;
+  display: flex;
+  clear: both;
+  grid-area: socialMedia;
+  align-items: center;
+  justify-content: left;
+}
+
+.profile{
+  grid-area: profile;
+  padding: 16px 0px 0px 16px;
 }
 
 main{
   grid-area: articles;
-  column-count: 2;
-  
 }
 
-.articleBox {
-  border-left: 5px solid green;
-  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-  page-break-inside: avoid; /* Firefox */
-  break-inside: avoid; /* IE 10+ */
+@media screen and (min-width: 601px){
+  main{
+    display: flex;
+    
+    grid-area: articles;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+  }
+  .articleBox {
+    width: calc(50% - 8px);
+  }
 }
 
 h1{
-  font-family: 'Roboto', sans-serif;
-  color: rgb(40, 102, 94);
-  font-family:  sans-serif;
-  font-size: 40
-  }
-
-h1 sub{
-  font-family: 'Roboto', sans-serif;
-  color: gray;
-  }
- 
-#profilePic{
-  position: relative;
-  Left: 200px;
-  bottom: 50px;
-  margin-bottom: -50px;
-  }
-
-header p{
-  font-size: 24px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  width: 320px;
-  }
-  p
-  {
-  }
-
-h2{
-  padding: 10px 0px 5px 0px;
-  margin: 0px;
-  break-inside: avoid;
-  background: green;
+  color: #3E4851;
+  font-size: 21px;
+  font-weight: 400;
 }
 
+.H1subtext{
+  font-weight: 500;
+  color: #4A872E;
+  font-size: 21px;
+  
+}
+ 
+#profilePic{
+  object-fit:  cover;
+  float: right;
+  margin: 8px 0px 8px 0px;
+  width: calc(100% - 90px);
+  height: 180px;
+  border: 0.5px solid  #3E4851;
+}
+
+header p{
+}
+
+.articleBox {
+    border-left: 5px solid #4A872E;
+    margin: 0px 0px 16px 0px;
+
+}
+  
+.articleBoxContent
+  {
+    padding: 16px 16px 16px 16px;
+}
+
+
+.icon{
+margin:12px;
+width: 32px;
+}
+  
+h3{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.articleBoxHeading{
+  font-weight: 700;
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  background-color: #4A872E;
+  line-height: 110%;
+}
