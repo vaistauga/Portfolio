@@ -38,7 +38,6 @@ body{
 }
 
 .socialMediaLinks{
-  margin: 8px 0px 8px 0px;
   display: flex;
   clear: both;
   grid-area: socialMedia;
@@ -47,18 +46,22 @@ body{
 }
 
 .profile{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
   grid-area: profile;
-  padding: 16px 0px 0px 16px;
+  padding: 0px 0px auto 0px;
 }
 
 main{
   grid-area: articles;
 }
 
+
 @media screen and (min-width: 601px){
   main{
     column-count: 2;
-    column-gap: 16px; 
+    column-gap: 16px;   
     grid-area: articles;
   }
   .articleBox {
@@ -70,6 +73,9 @@ h1{
   color: #3E4851;
   font-size: 21px;
   font-weight: 400;
+  margin: auto auto auto 0px;
+
+  padding: 0px;
 }
 
 .H1subtext{
@@ -80,12 +86,12 @@ h1{
 }
  
 #profilePic{
+  display: block;
   object-fit:  cover;
-  float: right;
-  margin: 8px 0px 8px 0px;
-  width: calc(100% - 90px);
-  height: 180px;
+  margin: 0px auto 0px auto;  
   border: 0.5px solid  #3E4851;
+  border-radius: 100px; 
+  height: 100px;
 }
 
 header p{
