@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body{
-  max-width: 750px;
+  max-width: 850px;
   min-width: 320px;
   margin: 0 auto;
   padding: 16px 8px 16px 8px;
@@ -57,14 +57,12 @@ main{
 
 @media screen and (min-width: 601px){
   main{
-    display: flex;
-    
+    column-count: 2;
+    column-gap: 16px; 
     grid-area: articles;
-    flex-wrap: wrap;  
-    justify-content: space-between;
   }
   .articleBox {
-    width: calc(50% - 8px);
+    display: inline-block;
   }
 }
 
@@ -99,8 +97,7 @@ header p{
 
 }
   
-.articleBoxContent
-  {
+.articleBoxContent{
     padding: 16px 16px 16px 16px;
 }
 
