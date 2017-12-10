@@ -6,92 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vai's Portfolio</title>
-    <link rel='stylesheet' href="css/css.css">
+    <link rel='stylesheet' href="css/structure.css">
+    <link rel='stylesheet' href="css/design.css">
     <link href="https://fonts.googleapis.com/css?family=Saira|Saira+Condensed:400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="/live.js"></script>
 </head>
 
 <body>
+    <h2 id="introduction">
+        My name is Vaidotas Staugaitis,
+        <br> I‘m a multi-disciplined web developer.
+        <br>
+        <em>Call me Vai</em>
+    </h2>
     <div class="profile">
-            
-        <h1>
-            My name is Vaidotas Staugaitis,
-            <br> I‘m a multi-disciplined web devloper.
-            <br>
-            <div class="H1subtext"> Call me Vai </div>
-        </h1>
-        <div class="photoandlinks">
-                <img id="profilePic" src="media/profilePic.png" alt="Vai's Profile Photo">     
-            <aside class="socialMediaLinks">
-                <a href="mailto:vaidorass@live.com"> <img class="icon" src="media/svg/icon_email.svg" alt="email: vaidorass@live.com"></a>
-                <a href="https://github.com/vaistauga"><img class="icon" src="media/svg/icon_github.svg"  alt="GitHub"></a> 
-                <a href="https://www.linkedin.com/feed/"> <img class="icon" src="media/svg/icon_linkedin.svg" alt="Linked In"></a> 
-                <a href="https://www.tumblr.com/dashboard"><img class="icon" src="media/svg/icon_tumblr.svg" alt="Tumblr"></a> 
-            </aside>
-        </div>   
-
-
-       
+        <img id="profilePic" src="media/profilePic.png" alt="Photo of Vai">
+        <div class="socialMediaLinks">
+            <a href="mailto:vaidorass@live.com">
+                <img class="icon" src="media/svg/icon_email.svg" alt="email: vaidorass@live.com">
+            </a>
+            <a href="https://github.com/vaistauga">
+                <img class="icon" src="media/svg/icon_github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/feed/">
+                <img class="icon" src="media/svg/icon_linkedin.svg" alt="Linked In">
+            </a>
+            <a href="https://www.tumblr.com/dashboard">
+                <img class="icon" src="media/svg/icon_tumblr.svg" alt="Tumblr">
+            </a>
+        </div>
     </div>
 
-
     <main>
-        <article class="articleBox">
-            <h2 class="articleBoxHeading">Media Center</h2>
+        <article>
+            <header>
+                <h2 class="whiteongreentext">Media Center</h2>
+            </header>
             <div class="articleBoxContent">
-                    <img class="article_image" src="media/MovieTrailerWebsite.jpg">
+                <figure>
+                    <img class="article_image" src="media/MovieTrailerWebsite.jpg" alt="Screenshot of movie trailer website">
+                </figure>
                 <p>I've built this during Udacity's full-stack nanodegree program. The purpose of this project is to demonstrate
                     the use of a Python to generate a static webpage. Python code pulls data which describes my favorite
                     (title, image, etc.) from a class, populates HTML template with it, and opens it in a browser. The generated
                     webpage displays a grid of my favorite movies. Each cell of the grid contains a title and a visual of
                     a movie. User may click a movie cell to bring up a pop-up of a YouTube video.
                 </p>
-                <aside class="socialMediaLinks">
-                    <h1 class="H1subtext">Find out more:</h1>
-                    <a href="https://github.com/vaistauga/Portfolio">
+                <section class="socialMediaLinks">
+                    <h2>
+                        <em>Find out more:</em>
+                    </h2>
+                    <a href="https://github.com/vaistauga/Portfolio" rel="external">
                         <img class="icon" src="media/svg/icon_github.svg" alt="Link to this projects GitHub page">
                     </a>
-                </aside>
+                </section>
             </div>
         </article>
-        <article class="articleBox">
-                <h2 class="articleBoxHeading">Media Center</h2>
+        <article>
+                <header>
+                    <h2 class="whiteongreentext">Media Center</h2>
+                </header>
                 <div class="articleBoxContent">
-                        <img class="article_image" src="media/MovieTrailerWebsite.jpg">
+                    <figure>
+                        <img class="article_image" src="media/MovieTrailerWebsite.jpg" alt="Screenshot of movie trailer website">
+                    </figure>
                     <p>I've built this during Udacity's full-stack nanodegree program. The purpose of this project is to demonstrate
                         the use of a Python to generate a static webpage. Python code pulls data which describes my favorite
-                        (title, image, etc.) from a class, populates HTML template with it, a
+                        (title, image, etc.) from a class, populates HTML template with it, and opens it in a browser. The generated
+                        webpage displays a grid of my favorite movies. Each cell of the grid contains a title and a visual of
+                        a movie. User may click a movie cell to bring up a pop-up of a YouTube video.
                     </p>
-                    <aside class="socialMediaLinks">
-                        <h1 class="H1subtext">Find out more:</h1>
-                        <a href="https://github.com/vaistauga/Portfolio">
+                    <section class="socialMediaLinks">
+                        <h2>
+                            <em>Find out more:</em>
+                        </h2>
+                        <a href="https://github.com/vaistauga/Portfolio" rel="external">
                             <img class="icon" src="media/svg/icon_github.svg" alt="Link to this projects GitHub page">
                         </a>
-                    </aside>
+                    </section>
                 </div>
             </article>
-            <article class="articleBox">
-                    <h2 class="articleBoxHeading">Media Center</h2>
+            <article>
+                    <header>
+                        <h2 class="whiteongreentext">Media Center</h2>
+                    </header>
                     <div class="articleBoxContent">
-                            <img class="article_image" src="media/MovieTrailerWebsite.jpg">
+                        <figure>
+                            <img class="article_image" src="media/MovieTrailerWebsite.jpg" alt="Screenshot of movie trailer website">
+                        </figure>
                         <p>I've built this during Udacity's full-stack nanodegree program. The purpose of this project is to demonstrate
                             the use of a Python to generate a static webpage. Python code pulls data which describes my favorite
                             (title, image, etc.) from a class, populates HTML template with it, and opens it in a browser. The generated
                             webpage displays a grid of my favorite movies. Each cell of the grid contains a title and a visual of
-                            a movie. User may click a movie cell to bring up a pop-up of a YouTube video.code pulls data which describes my favorite
-                            (title, image, etc.) from a class, populates HTML template with it, and opens it in a browser. The generated
-                            webpage displays a grid of my favorite movies. Each cell of the grid contains a title and a visual of
                             a movie. User may click a movie cell to bring up a pop-up of a YouTube video.
                         </p>
-                        <aside class="socialMediaLinks">
-                            <h1 class="H1subtext">Find out more:</h1>
-                            <a href="https://github.com/vaistauga/Portfolio">
+                        <section class="socialMediaLinks">
+                            <h2>
+                                <em>Find out more:</em>
+                            </h2>
+                            <a href="https://github.com/vaistauga/Portfolio" rel="external">
                                 <img class="icon" src="media/svg/icon_github.svg" alt="Link to this projects GitHub page">
                             </a>
-                        </aside>
+                        </section>
                     </div>
                 </article>
-
+    </main>
 </body>
 </html>

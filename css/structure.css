@@ -1,0 +1,66 @@
+@media screen and (max-width: 600px){
+    body{
+      max-width: 850px;
+      min-width: 320px;
+      margin: 0 auto;
+      padding: 16px 9px;
+      display:grid;
+      grid-template-areas:
+      "profile"
+      "intro" 
+      "articles";
+    }
+  
+    main{
+        grid-area: articles;
+    }
+  
+    .profile{
+        justify-self: center;
+        grid-area: profile;
+    }
+}
+
+@media screen and (min-width: 601px){
+    body{
+      max-width: 850px;
+      min-width: 320px;
+      margin: 0 auto;
+      padding: 16px 9px;
+      display:grid;
+      grid-template-areas:
+      "intro profile"
+      "articles articles";
+      grid-row-gap: 16px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    article {
+        /*This precent articles to be split between two columns*/
+        display: inline-block;
+      }
+  
+    main{
+      /*Divide article area into two columns*/
+      grid-area: articles;
+      column-count: 2;
+      column-gap: 24px;   
+    }
+
+
+   
+    .profile{
+      grid-area: profile;
+      justify-self: right;
+    }
+}
+    
+#introduction {
+    grid-area: intro;
+  }
+
+  .socialMediaLinks{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }

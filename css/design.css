@@ -1,0 +1,68 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0px;  
+ 
+}
+p{
+  font-family:  'Saira', sans-serif;
+}
+
+a{
+  line-height: 0%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 500; 
+}
+
+h2{
+  color: #3E4851;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.whiteongreentext{
+  background-color: #4A872E;
+  line-height: 200%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+}
+
+h2 em{
+  font-weight: 500;
+  color: #4A872E;  
+  font-style: normal;
+}
+
+.article_image{
+  width: 100%;
+  height: auto;
+  border: 0.5px solid black;
+}
+
+#profilePic{
+  display: block;
+  object-fit:  cover;
+  margin: 0px auto 0px auto;  
+  border: 0.5px solid  #3E4851;
+  border-radius: 100px; 
+  height: 100px;
+}
+
+article {
+    border-left: 5px solid #4A872E;
+    margin-bottom: 16px;
+}
+  
+.articleBoxContent{
+    padding: 8px 0px 8px 8px;
+}
+
+.icon{
+margin:12px;
+width: 32px;
+}
